@@ -1,0 +1,402 @@
+html{
+    scrollbar-color: #3b82f6 #eff3f9;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+body{
+
+    font-family: "montserrat",sans-serif;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --background-color:#eff3f9;
+    --color-btn:#3744c6;
+    --color-striaght: #fff;
+    --color-blue:#3b82f6;
+    --color-black:#00000080;
+}
+/*start nav*/
+.navbar{
+   background-color: var(--background-color);
+   box-shadow: 0 5px 15px #DDD;
+}
+.navbar .container .navbar-brand{
+    width: 130px;
+
+} 
+.navbar .container .collapse ul li a{
+   transition: 0.3s ease;
+}
+.navbar .container .collapse ul li a:hover{
+    color: var(--color-btn);
+    transition: 2s ease;
+}
+.navbar .container .collapse .buttons .my-btn,
+.navbar .container .offcanvas .offcanvas-body .buttons .my-btn{
+     background-color: var(--color-btn);
+     color: var(--color-striaght);
+}
+.navbar .container .collapse .buttons .my-btn-outline,
+.navbar .container .offcanvas .offcanvas-body .buttons .my-btn-outline,
+.navbar .container .offcanvas .offcanvas-body form .my-btn-outline
+{
+    border: 1px solid #212529;
+}
+.navbar .container .collapse .buttons .my-btn-outline:hover,
+.navbar .container .offcanvas .offcanvas-body .buttons .my-btn-outline:hover,
+.navbar .container .offcanvas .offcanvas-body form .my-btn-outline:hover{
+    background-color: var(--color-btn);
+    color: var(--color-striaght);
+    transition: 0.3s ease;
+}
+.navbar .container .collapse .buttons .my-btn:focus,
+.navbar .container .collapse .buttons .my-btn-outline:focus,
+.navbar .container .offcanvas .offcanvas-body .buttons .my-btn:focus,
+.navbar .container .offcanvas .offcanvas-body .buttons .my-btn-outline:focus,
+.navbar .container .offcanvas .offcanvas-body form .my-btn-outline:focus{
+    box-shadow:1px 1px 5px 3px var(--color-blue);
+}
+.navbar .container .offcanvas .offcanvas-body form .form-control:focus{
+  box-shadow: none;
+}
+.navbar .container .offcanvas .offcanvas-body ul li a{
+    
+    transition: 0.3s ease;
+}
+.navbar .container .offcanvas .offcanvas-body ul li a:hover{
+    color: var(--color-btn);
+}
+/*end*/
+/*landing*/
+.landing{
+    background-color: var(--background-color);
+
+}
+.landing .container .row .text h1 span,
+.landing .container .row .text p span{
+    color: var(--color-btn); 
+}
+.landing .container .row .text .buttons .my-btn{
+    background-color: var(--background-color);
+    color:var(--color-black);
+    border: 1px solid var(--color-black);
+    transition: 0.3s ease;
+}
+.landing .container .row .text .buttons .my-btn:hover{
+    background-color: var(--color-btn);
+    color: var(--color-striaght);
+}
+.landing .container .row .text .buttons .my-btn-outline{
+    background-color: var(--color-btn);
+    color: var(--color-striaght);
+    transition: 0.3s ease;
+}
+.landing .container .row .text .buttons .my-btn:focus,
+.landing .container .row .text .buttons .my-btn-outline:focus
+{
+    box-shadow:1px 1px 5px 3px var(--color-blue);
+}
+.landing .container .row .image .im2{  
+
+    transform:translate(46%,33%);
+    animation: image 2s linear infinite alternate;
+    transition: 0.5s ease;
+}
+@keyframes image {
+    from{
+       top: 50px ;
+    }
+    to{
+       top: -40px;
+    }
+}
+/*end*/
+/*About*/
+.About .container .row .box >svg{
+
+    width: 70px;
+    color: var(--color-blue);
+    background-color: var(--background-color);
+    border-radius: 10px;
+}
+/*end*/
+/*Features*/
+.Features .container .row .text1 >span{
+    background-color: var(--color-blue);
+    border-radius: 10px;
+}
+.Features .container .row .text1 .box >svg{
+    width: 50px;
+    color: var(--color-blue);
+}
+.Features .container .row .image .im3{
+    top: -200px;
+    left: 30px;
+}
+
+.Features .container .row .image .im4{
+     top: 200px;
+     right: 30px;
+}
+.Features .container .row .image .img5{
+    border-radius: 10px;
+    animation: photo 3s linear infinite alternate;
+    transition: 0.5s ease;
+    left: 0;
+    top: 0;
+}
+
+@keyframes photo {
+    from{
+       transform: translateY(5%) ;
+    }
+    to{
+        transform: translateY(-5%);
+    }
+}
+/*end*/
+/*team*/
+.team{
+    background-color: var(--background-color);
+}
+.team .container h3 >span{
+   
+    color: var(--color-blue);
+}
+.team .container .row .card{
+    border-radius: 15px;
+    box-shadow:1px 2px 5px 3px #DDD ;
+    transition: 0.3s ease;
+}
+.team .container .row .card:hover{
+    transform: translateY(-15px);
+}
+.team .container .row .card >span{
+    color: var(--background-color);
+    background-color: var(--color-blue);
+} 
+.team .container .row .card img{
+    width: 80%;
+    height: 200px;
+    object-fit: cover;
+}
+/*end*/
+/*solution*/
+.solution .container div h3 > span{
+    color: var(--color-btn);
+}
+.solution .container .swiper {
+    width: 68%;
+    height: 68%;
+    margin-left: auto;
+     margin-right: auto;
+     position: relative;
+}
+
+.solution .container .swiper-wrapper .swiper-slide{
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #DDD;
+}
+.solution .container .swiper-wrapper .swiper-slide > img{
+  
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.solution .container .swiper-wrapper .swiper-slide .text button{
+
+    background-color: var(--color-btn);
+    color: white;
+    height: 50px;
+} 
+.solution .container .swiper-wrapper .swiper-slide .text button:focus{
+    box-shadow:1px 1px 5px 3px var(--color-blue);
+}
+.solution .container .swiper .swiper-pagination-bullet{
+    background-color: var(--color-btn);
+}
+.solution .container .swiper .slider-buttons{
+    padding-top: 15px;
+    width: 100%;
+    left: 0;
+}
+.solution .container .swiper .slider-buttons .swiper-button-next,
+.solution .container .swiper .slider-buttons .swiper-button-prev{
+    color: var(--color-btn);
+    position: relative;
+    right: unset;
+    left: unset;
+}
+.solution .container .swiper .slider-buttons .swiper-button-next::after,
+.solution .container .swiper .slider-buttons .swiper-button-prev::after{
+    font-size: 40px;
+}
+
+/*end*/
+/*section*/
+.section{
+    background-color: var(--background-color);
+}
+.section .container div h3 > span{
+    color: var(--color-btn);
+}
+.section .container .row .card{
+    box-shadow: 0 5px 15px #DDD;
+    transition: 0.4s ease;
+}
+.section .container .row .card:not(.Agency) .spn{
+    color: #0000007d;
+}
+.section .container .row .card:not(.Agency):hover{
+    background-color: var(--color-btn);
+}
+.section .container .row .card:not(.Agency):hover h1,
+.section .container .row .card:not(.Agency):hover > span,
+.section .container .row .card:not(.Agency):hover .spn,
+.section .container .row .card:not(.Agency):hover .one .box{
+    color: white;
+}
+.section .container .row .card:not(.Agency):hover .butt .my-btn{
+
+    color: var(--color-btn);
+    background-color: white;
+}
+.section .container .row .card:not(.Agency):hover .butt .my-btn-outline{
+
+    color: white;
+    border: 1px solid white;
+}
+.section .container .row .Agency{
+    background-color: var(--color-btn);
+}
+.section .container .row .card:not(.Agency) .butt .my-btn{
+   color: white;
+   background-color: var(--color-btn);
+} 
+.section .container .row .card:not(.Agency) .butt .my-btn-outline{
+  
+    color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+}
+.section .container .row .Agency .butt .my-btn{
+
+    background-color: white;
+    color: var(--color-btn);
+
+}
+.section .container .row .Agency .butt .my-btn-outline{
+   
+    color: white;
+    border: 1px solid white;
+}
+.section .container .row .card img{
+    width: 130px;
+}
+.section .container .row .card:not(.Agency) > span{
+   color: var( --color-btn);
+}
+/*end*/
+/*subscribe*/
+.subscribe .container div h3 > span{
+    color: var(--color-btn);
+}
+.subscribe .container .box input{
+    width: 300px;
+}
+.subscribe .container .box input:focus{
+    outline: none;
+    border: 1px solid var(--color-btn);
+}
+.subscribe .container .box .my-btn{
+    color: white;
+    background-color: var(--color-btn);
+} 
+.subscribe .container .box .my-btn:focus{
+    box-shadow:1px 1px 5px 3px var(--color-blue);
+}
+
+/*end*/
+/*footer*/
+.footer{
+    background-color: var(--background-color);
+}
+.footer .container .row .box > img{
+
+    width: 200px;
+}
+.footer .container .row .box p > span{
+    color: var(--color-btn);
+}
+.footer .container .row .box .icoon a{
+ 
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.footer .container .row .box .icoon a::before{
+   
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    transition-duration: 0.3s;
+    transition-property: transform,opacity;
+}
+.footer .container .row .box .icoon a:hover > .md{
+       transform: translateY(-5px);
+       transition: 0.3s ease;
+}
+.footer .container .row .box .icoon a:hover::before{
+    opacity: 1;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+.footer .container .row .box ul li a{
+    color:#0000007d;
+    transition: 0.3s ease;
+}
+.footer .container .row .box ul li a::before{
+    content: " ";
+    background-color: var(--color-btn);
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    top: 30px;
+    transition: 0.3s ease;
+}
+.footer .container .row .box ul li a:hover::before{
+    width: 80px;
+}
+.footer .container .row .box ul li a:hover{
+      color: var(--color-btn);
+
+}
+.footer .container .row .box input:focus{
+    outline: none;
+    border: 1px solid var(--color-btn);
+}
+.footer .container .row .box .my-btn{
+    color: white;
+    background-color: var(--color-btn);
+}
+.footer .container .row .box .my-btn:focus{
+
+    box-shadow:1px 1px 5px 3px var(--color-blue);
+}
+.footer .end .name{
+    color: var(--color-btn);
+}
+/*end*/
+

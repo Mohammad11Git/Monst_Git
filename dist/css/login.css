@@ -1,0 +1,178 @@
+html{
+    scrollbar-color: #3b82f6 #eff3f9;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+body{
+
+    font-family: "montserrat",sans-serif;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --background-color:#eff3f9;
+    --color-btn:#3744c6;
+    --color-striaght: #fff;
+    --color-blue:#3b82f6;
+    --color-black:#00000080;
+}
+/*start nav*/
+.navbar{
+   background-color: var(--background-color);
+   box-shadow: 0 5px 15px #DDD;
+}
+.navbar .container .navbar-brand{
+    width: 130px;
+
+} 
+.navbar .container .collapse ul li a{
+   transition: 0.3s ease;
+}
+.navbar .container .collapse ul li a:hover{
+    color: var(--color-btn);
+    transition: 2s ease;
+}
+.navbar .container .collapse .buttons .my-btn,
+.navbar .container .offcanvas .offcanvas-body .buttons .my-btn{
+     background-color: var(--color-btn);
+     color: var(--color-striaght);
+}
+.navbar .container .collapse .buttons .my-btn-outline,
+.navbar .container .offcanvas .offcanvas-body .buttons .my-btn-outline,
+.navbar .container .offcanvas .offcanvas-body form .my-btn-outline
+{
+    border: 1px solid #212529;
+}
+.navbar .container .collapse .buttons .my-btn-outline:hover,
+.navbar .container .offcanvas .offcanvas-body .buttons .my-btn-outline:hover,
+.navbar .container .offcanvas .offcanvas-body form .my-btn-outline:hover{
+    background-color: var(--color-btn);
+    color: var(--color-striaght);
+    transition: 0.3s ease;
+}
+.navbar .container .collapse .buttons .my-btn:focus,
+.navbar .container .collapse .buttons .my-btn-outline:focus,
+.navbar .container .offcanvas .offcanvas-body .buttons .my-btn:focus,
+.navbar .container .offcanvas .offcanvas-body .buttons .my-btn-outline:focus,
+.navbar .container .offcanvas .offcanvas-body form .my-btn-outline:focus{
+    box-shadow:1px 1px 5px 3px var(--color-blue);
+}
+.navbar .container .offcanvas .offcanvas-body form .form-control:focus{
+  box-shadow: none;
+}
+.navbar .container .offcanvas .offcanvas-body ul li a{
+    
+    transition: 0.3s ease;
+}
+.navbar .container .offcanvas .offcanvas-body ul li a:hover{
+    color: var(--color-btn);
+}
+/*end*/
+/*login*/
+.login .container .box > span{
+
+    font-size: 12px;
+    background-color: var(--color-blue);
+    color: white;
+}
+.login .container .box h3 > span{
+
+    color: var(--color-btn);
+}
+.login .container .row .box .row .form-control:focus{
+   box-shadow: none;
+   border: 1px solid var(--color-btn);
+}
+.login .container .row .box .row .box1 .btn {
+    background-color: var(--color-btn);
+}
+.login .container .row .box .row .box1 p{
+    color: var(--color-blue);
+    transition: 0.3s;
+}
+.login .container .row .box .row .box1 p:hover{
+    color: var(--color-btn);
+    cursor: pointer;
+}
+/*end*/
+/*footer*/
+.footer{
+    background-color: var(--background-color);
+}
+.footer .container .row .box > img{
+
+    width: 200px;
+}
+.footer .container .row .box p > span{
+    color: var(--color-btn);
+}
+.footer .container .row .box .icoon a{
+ 
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.footer .container .row .box .icoon a::before{
+   
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    transition-duration: 0.3s;
+    transition-property: transform,opacity;
+}
+.footer .container .row .box .icoon a:hover > .md{
+       transform: translateY(-5px);
+       transition: 0.3s ease;
+}
+.footer .container .row .box .icoon a:hover::before{
+    opacity: 1;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+.footer .container .row .box ul li a{
+    color:#0000007d;
+    transition: 0.3s ease;
+}
+.footer .container .row .box ul li a::before{
+    content: " ";
+    background-color: var(--color-btn);
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    top: 30px;
+    transition: 0.3s ease;
+}
+.footer .container .row .box ul li a:hover::before{
+    width: 80px;
+}
+.footer .container .row .box ul li a:hover{
+      color: var(--color-btn);
+
+}
+.footer .container .row .box input:focus{
+    outline: none;
+    border: 1px solid var(--color-btn);
+}
+.footer .container .row .box .my-btn{
+    color: white;
+    background-color: var(--color-btn);
+}
+.footer .container .row .box .my-btn:focus{
+
+    box-shadow:1px 1px 5px 3px var(--color-blue);
+}
+.footer .end .name{
+    color: var(--color-btn);
+}
+/*end*/
